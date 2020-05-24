@@ -1,19 +1,19 @@
 library(dplyr)
 
-# reading x_train and y_train data
+# read train data
 X_train <- read.table("./UCI HAR Dataset/train/X_train.txt")
 Y_train <- read.table("./UCI HAR Dataset/train/Y_train.txt")
 Sub_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 
-# reading x_test and y_test data
+# read test data
 X_test <- read.table("./UCI HAR Dataset/test/X_test.txt")
 Y_test <- read.table("./UCI HAR Dataset/test/Y_test.txt")
 Sub_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 
-# reading the description of data
+# read data description
 variable_names <- read.table("./UCI HAR Dataset/features.txt")
 
-# reading the activity labels
+# read activity labels
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 
 # 1. Merges the training and the test sets to create one data set.
